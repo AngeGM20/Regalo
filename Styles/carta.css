@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('../Img/Fondo_Carta/8frehb.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.title,.text{
+    color: white;
+}
+.title{
+    text;
+    margin-top: 15%;
+}
+.imagen{
+    max-width: 70%;
+    max-height: 50%;
+    height: auto;
+    width: auto;
+  }
+  .imagen2{
+    max-width: 85%;
+    max-height: 90%;
+    height: auto;
+    width: auto;
+  }
+
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.heart {
+    font-size: 20px;
+    position: fixed;
+    z-index: 9999;
+    animation: blink 1s infinite;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #111; /* Cambiar el color del texto a negro */
+    background: #fff; /* Cambiar el color de fondo a blanco */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #111; /* Cambiar el color del texto a negro */
+    background: #fff; /* Cambiar el color de fondo a blanco */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #e41212, #a40606e5, #6a0c0c, #ff0303, #e41010de, #890404f6);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1; /* Cambiar la opacidad a 1 para que siempre esté activo */
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* Cambiar el color de fondo a blanco */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* Cambiar el color de fondo a blanco */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
